@@ -1,0 +1,18 @@
+print('sheiyvanet %')
+a = float(input())
+if 0 <= a <= 50:
+    print('you have failed the exam... :(')
+elif 51 <= a <= 60:
+    print('you have passed the exam. The result = E')
+elif 61 <= a <= 70:
+    print('you have passed the exam. The result = D')
+elif 71 <= a <= 80:
+    print('you have passed the exam. The result = C')
+elif 81 <= a <= 90:
+    print('you have passed the exam. The result = B')
+elif 91 <= a <= 99:
+    print('you have passed the exam. The result = A')
+elif a == 100:
+    print('you have passed the exam.you are an excellent student! The result = A')
+else:
+    print('araswori cifri sheiyva
