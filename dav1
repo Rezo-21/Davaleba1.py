@@ -1,0 +1,36 @@
+import random
+
+n = random.randint(1, 30)
+
+guessR = 0
+
+print("თამაშიდან გასვლისთვის აკრიფეთ exit")
+
+while guessR < 5:
+
+    exit=input()
+    exit=str(exit)
+    if exit == "exit":
+        print("თქვენ დაამთავრეთ თამაში")
+        break
+    else:
+            continue
+
+    guess = int(input("შეიყვანეთ რიცხვი 1-დან 30-მდე: "))
+    guess = int(guess)
+    guessR = guessR + 1
+    if guessR > 2:
+        if guess > n:
+             print("ნაკლები ჩაწერეთ")
+
+        elif guess < n:
+              print("მეტი ჩაწერეთ")
+
+    if guess == n:
+        print("თქვენ გამოიცანით რიცხვი!", guessR, "ცდით")
+
+        break
+
+else:
+
+    print("სწორი ციფრი არის : ", n)
