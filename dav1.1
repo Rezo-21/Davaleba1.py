@@ -1,0 +1,21 @@
+new = ''
+print("შეიყვანეთ დნმ")
+dna = input()
+
+for i in dna:
+    if i not in "GCTA":
+        print('არასწორია')
+        break
+else:
+    for j in dna:
+        if j == 'G':
+            new += 'G'
+        elif j == 'C':
+            new += 'C'
+        elif j == 'T':
+            new += 'U'
+        elif j == 'A':
+            new += 'A'
+        else:
+            print("არასწორია")
+print(new)
